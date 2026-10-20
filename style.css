@@ -1,0 +1,93 @@
+h1,
+p,
+body,
+li,
+ul,
+span {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 900;
+  background: #ffffff;
+  color: #222;
+  font-size: 80px;
+  padding: 12px 24px;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  position: fixed;
+  top: 24px;
+  right: 24px;
+}
+
+.name {
+  font-size: 40px;
+  position: fixed;
+  bottom: 12px;
+  left: 24px;
+}
+.bio {
+  font-size: 40px;
+  position: fixed;
+  bottom: 12px;
+  right: 24px;
+}
+
+.links li {
+  margin-bottom: -12px;
+}
+
+.links a {
+  transition: padding-left 1s ease;
+}
+
+.links a:hover {
+  padding-left: 48px;
+  color: #dddddd;
+}
+
+.links li .info {
+  font-size: 12px;
+  padding-left: 12px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .info {
+    display: none;
+  }
+
+  .links {
+    position: fixed;
+    bottom: 12px;
+  }
+
+  .links li {
+    font-size: 60px;
+  }
+
+  .name,
+  .bio {
+    top: 12px;
+  }
+
+  .avatar {
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
