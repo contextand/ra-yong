@@ -110,6 +110,10 @@ body {
     font-size: 12px;
   }
 
+  .mail {
+    display: none;
+  }
+
   .avatar {
     position: fixed;
     top: 35%;
